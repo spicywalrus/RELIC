@@ -1,0 +1,10 @@
+{
+  "name": "relic-planner",
+  "version": "1.0.0",
+  "description": "Relic: a themed personal planner (Ledger, Hearth, Gold Bank, Mood Mountain, Egg Thief, Deck, Archive and more). Static HTML, CSS and vanilla JavaScript with no build step.",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve . -l 8080",
+    "start:python": "python3 -m http.server 8080"
+  }
+}

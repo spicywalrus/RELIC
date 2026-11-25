@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Relic</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A6%8C%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#5f5370">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="sprig" viewBox="0 0 40 120"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 118C18 80 23 40 20 4"/><ellipse cx="11" cy="96" rx="10" ry="4" transform="rotate(-35 11 96)"/><ellipse cx="29" cy="82" rx="10" ry="4" transform="rotate(35 29 82)"/><ellipse cx="11" cy="66" rx="10" ry="4" transform="rotate(-35 11 66)"/><ellipse cx="29" cy="52" rx="10" ry="4" transform="rotate(35 29 52)"/><ellipse cx="12" cy="36" rx="9" ry="3.5" transform="rotate(-35 12 36)"/><ellipse cx="28" cy="22" rx="9" ry="3.5" transform="rotate(35 28 22)"/></g></symbol>
+<symbol id="flower" viewBox="0 0 30 30"><g fill="var(--paper)" stroke="currentColor" stroke-width="1"><circle cx="15" cy="6" r="5"/><circle cx="24" cy="13" r="5"/><circle cx="21" cy="24" r="5"/><circle cx="9" cy="24" r="5"/><circle cx="6" cy="13" r="5"/><circle cx="15" cy="15" r="4" fill="currentColor"/></g></symbol>
+<symbol id="jar" viewBox="0 0 100 130"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 104V56C24 34 36 22 50 22S76 34 76 56V104"/><circle cx="50" cy="15" r="5"/><path d="M46 20h8M14 104h72v8H14zM20 112h60v8H20zM32 96h36v8H32z"/><path d="M50 78C40 62 28 64 30 76C32 86 44 86 50 80C56 86 68 86 70 76C72 64 60 62 50 78zM50 70v18M50 52l3 5-3 5-3-5z"/></g></symbol>
+<symbol id="gate" viewBox="0 0 100 130"><use href="#sprig" x="2" y="40" width="16" height="84"/><use href="#sprig" x="82" y="40" width="16" height="84"/><g fill="none" stroke="currentColor" stroke-width="1.3"><path d="M20 126V52a30 30 0 0 1 60 0v74M30 126V54a20 20 0 0 1 40 0v72M18 126h64"/><path d="M50 124l-9-26M50 124l9-26M42 98l8-6 8 6M30 124l-4-12M70 124l4-12"/></g><g fill="currentColor"><circle cx="50" cy="12" r="1.3"/><circle cx="28" cy="22" r="1.3"/><circle cx="74" cy="26" r="1.3"/></g></symbol>
+<symbol id="orbit" viewBox="0 0 100 130"><g fill="none" stroke="#ead9bb" stroke-width=".9"><ellipse cx="50" cy="66" rx="40" ry="16" transform="rotate(-22 50 66)"/><ellipse cx="50" cy="66" rx="30" ry="30"/><ellipse cx="50" cy="66" rx="40" ry="40" opacity=".5"/><ellipse cx="50" cy="66" rx="22" ry="8" transform="rotate(-22 50 66)"/></g><circle cx="50" cy="66" r="12" fill="#ead9bb" opacity=".85"/><g fill="#ead9bb"><circle cx="82" cy="40" r="3"/><circle cx="22" cy="90" r="2.5"/><circle cx="76" cy="98" r="2"/><circle cx="20" cy="26" r="1.5"/><circle cx="60" cy="14" r="1.5"/><circle cx="88" cy="70" r="1.3"/><circle cx="12" cy="60" r="1.3"/></g></symbol>
+<symbol id="i-stag" viewBox="0 0 24 24"><path d="M12 21l-3.5-6 1-4h5l1 4zM9.5 11L7 4M7 4L4.5 3M7 4l-2 2.5M14.5 11L17 4M17 4l2.5-1M17 4l2 2.5M10.5 14.5h.01M13.5 14.5h.01"/></symbol><symbol id="i-heron" viewBox="0 0 24 24"><path d="M7 21l3-7c2-3 1-7 0-9 1-2 4-2 4 0l4 1.5-4 1c0 4 1 6-1 9l-1 4.5M9 21H7M12 21h-2"/></symbol><symbol id="i-fox" viewBox="0 0 24 24"><path d="M4 4l5 4h6l5-4-1 9-7 8-7-8zM9 12.5h.01M15 12.5h.01M12 17h.01"/></symbol><symbol id="i-moth" viewBox="0 0 24 24"><path d="M12 8v12M12 10C8 4 3 6 4 12c1 4 6 4 8 0M12 10c4-6 9-4 8 2-1 4-6 4-8 0M10.5 6L8.5 3M13.5 6l2-3"/></symbol><symbol id="i-owl" viewBox="0 0 24 24"><path d="M6 5l3 2h6l3-2v12a6 6 0 0 1-12 0zM9.5 11.5h.01M14.5 11.5h.01M12 14.5l-1 2h2z"/></symbol><symbol id="i-hare" viewBox="0 0 24 24"><path d="M9 14V4.5a1.7 1.7 0 0 1 3.2 0V12M12.2 12V4.5a1.7 1.7 0 0 1 3.2 0V14c3 1 4 4 4 6.5H5c0-3 2-5.5 4-6.5zM10.5 17h.01"/></symbol><symbol id="star8" viewBox="0 0 40 40"><path d="M20 2l4 12 12 -4-8 10 8 10-12-4-4 12-4-12-12 4 8-10-8-10 12 4z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<div class="app">
+<nav class="side" aria-label="Sections">
+  <button class="medal" id="sideTgl" aria-label="Collapse or expand the sidebar" aria-expanded="true"><svg width="40" height="40"><use href="#star8"/></svg></button>
+  <button class="nav on" data-v="home" title="Home" aria-label="Home"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16L16 5l12 11M8 14v13h16V14M13 27v-8h6v8"/></svg><span class="nl">Home</span></button>
+  <button class="nav" data-v="daily" title="Daily" aria-label="Daily"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" id="dIco"><circle cx="16" cy="16" r="11"/></svg><span class="nl">Daily</span></button>
+  <button class="nav" data-v="hearth" title="Hearth" aria-label="Hearth"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 3c1 6 8 9 8 16a8 8 0 0 1-16 0c0-4 2-6 4-8 0 3 2 4 3 4 0-4 0-8 1-12z"/></svg><span class="nl">Hearth</span></button>
+  <button class="nav" data-v="mood" title="Mood Mountain" aria-label="Mood Mountain"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 26L11 9l5 8 4-6 10 15zM9 14l2 2 2-2"/></svg><span class="nl">Mood Mountain</span></button>
+  <button class="nav" data-v="egg" title="Egg Thief" aria-label="Egg Thief"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 4C10 4 6 12 6 18a10 10 0 0 0 20 0c0-6-4-14-10-14zM11 18l3 3 3-3 3 3"/></svg><span class="nl">Egg Thief</span></button>
+  <button class="nav" data-v="life" title="Life Force" aria-label="Life Force"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 27C6 19 4 14 4 10a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 4-2 9-12 17z"/></svg><span class="nl">Life Force</span></button>
+  <button class="nav" data-v="reliquary" title="Reliquary" aria-label="Reliquary"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 26V14a8 8 0 0 1 16 0v12M5 26h22M16 3v3M12 22c2-5 6-5 8 0"/></svg><span class="nl">Reliquary</span></button>
+  <button class="nav" data-v="bank" title="Gold Bank" aria-label="Gold Bank"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="7.5"/><path d="M16 11v10M12.5 13.5c0-2.2 7-2.2 7 0s-7 1.8-7 4 7 2.2 7 0"/></svg><span class="nl">Gold Bank</span></button>
+  <button class="nav" data-v="wish" title="Wishlist" aria-label="Wishlist"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 14h22v12H5zM4 10h24v4H4zM16 10v16M16 10c-4 0-6-5-2-5 3 0 2 5 2 5zM16 10c4 0 6-5 2-5-3 0-2 5-2 5z"/></svg><span class="nl">Wishlist</span></button>
+  <button class="nav" data-v="deck" title="Deck" aria-label="Deck"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="5" width="16" height="20" rx="2"/><path d="M6 9v18h16"/></svg><span class="nl">Deck</span></button>
+  <button class="nav" data-v="skill" title="Skill Tree" aria-label="Skill Tree"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 27V17M16 17L8 12M16 17l8-5M8 12V7M24 12V7"/><circle cx="16" cy="28" r="2"/><circle cx="8" cy="5" r="2"/><circle cx="24" cy="5" r="2"/></svg><span class="nl">Skill Tree</span></button>
+  <button class="nav" data-v="dream" title="Dreamcatcher" aria-label="Dreamcatcher"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="16" cy="12" r="8"/><path d="M16 4v16M8 12h16M10 7l12 10M22 7L10 17M16 20v8M12 20l-2 8M20 20l2 8"/></svg><span class="nl">Dreamcatcher</span></button>
+  <button class="nav" data-v="archive" title="Archive" aria-label="Archive"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="7" width="24" height="19" rx="2"/><path d="M4 13h24M10 4v5M22 4v5"/></svg><span class="nl">Archive</span></button>
+  <button class="nav" data-v="reflection" title="Reflection" aria-label="Reflection"><svg viewBox="0 0 32 32"><use href="#star8"/></svg><span class="nl">Reflection</span></button>
+  <svg class="sp" viewBox="0 0 40 120" preserveAspectRatio="xMidYMax meet"><use href="#sprig"/></svg>
+  <div class="medal"><svg width="38" height="38" viewBox="0 0 40 40"><path d="M26 6a15 15 0 1 0 8 24a12 12 0 1 1-8-24z" fill="currentColor"/></svg></div>
+</nav>
+
+<main>
+<div class="top"><span class="orn" style="left:14%">❦</span><div class="title">RELIC</div><span class="orn" style="right:14%;transform:translateY(-50%) scaleX(-1)">❦</span>
+<button class="who" id="who" aria-label="Profile"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="13" cy="10" r="4.5"/><path d="M4 23c1-6 5-8 9-8s8 2 9 8"/></svg></button></div>
+
+<section class="view" id="v-home">
+<div class="ban"><div class="badge" id="badge"></div><svg viewBox="0 0 700 270" fill="none" stroke="currentColor" stroke-width="1.5" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+ <path d="M16 270V130Q16 30 350 30Q684 30 684 130V270" fill="var(--sky)" fill-opacity=".55"/>
+ <path d="M26 270V130Q26 42 350 42Q674 42 674 130V270" stroke-width="1"/>
+ <g stroke-width=".9" opacity=".7"><circle cx="350" cy="290" r="110"/><circle cx="350" cy="290" r="150"/><circle cx="350" cy="290" r="190" stroke-dasharray="1 5"/><circle cx="350" cy="290" r="230"/><circle cx="350" cy="290" r="270" stroke-dasharray="1 5"/></g>
+ <g id="stars"></g>
+ <g id="emblem"></g>
+ <g><use href="#sprig" x="28" y="150" width="34" height="120"/><use href="#sprig" x="62" y="168" width="30" height="102"/><use href="#sprig" x="96" y="190" width="26" height="80"/><use href="#sprig" x="636" y="150" width="34" height="120"/><use href="#sprig" x="606" y="168" width="30" height="102"/><use href="#sprig" x="576" y="190" width="26" height="80"/>
+ <use href="#flower" x="40" y="196" width="26" height="26"/><use href="#flower" x="84" y="222" width="22" height="22"/><use href="#flower" x="634" y="196" width="26" height="26"/><use href="#flower" x="594" y="222" width="22" height="22"/><use href="#flower" x="130" y="240" width="20" height="20"/><use href="#flower" x="550" y="240" width="20" height="20"/></g>
+</svg></div>
+<div class="frame themebar"><svg width="28" height="28" style="color:var(--plum)"><use href="#star8"/></svg><div><h3 id="theme"></h3><p id="tag"></p></div><button class="btn" id="drawBtn">Draw New Week →</button></div>
+
+<div class="frame outlook"><h2>THIS WEEK’S OUTLOOK</h2>
+<svg viewBox="0 0 700 130" fill="none" stroke="currentColor" stroke-width="1.2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="700" height="130" fill="var(--sky)" fill-opacity=".5" stroke="none"/>
+ <path d="M60 20a22 22 0 1 0 22 30a17 17 0 1 1-22-30z" fill="var(--paper)"/>
+ <path d="M0 110C80 96 160 108 260 100S440 108 520 98 640 90 700 100V130H0z" fill="var(--paper)"/>
+ <path d="M590 100V74h44v26zM592 74a20 20 0 0 1 40 0M634 62l16-8-4-8-16 8" fill="var(--paper)"/>
+ <g fill="currentColor" opacity=".6"><path d="M150 106l6-20 6 20zM170 108l5-16 5 16zM330 104l5-14 5 14zM470 104l6-18 6 18zM500 104l5-14 5 14zM540 100l6-20 6 20z"/></g>
+ <g fill="currentColor" stroke="none"><circle cx="160" cy="24" r="1.4"/><circle cx="260" cy="40" r="1.4"/><circle cx="360" cy="18" r="1.4"/><circle cx="440" cy="44" r="1.4"/><circle cx="520" cy="22" r="1.4"/><circle cx="300" cy="70" r="1.4"/><circle cx="620" cy="30" r="1.4"/></g></svg>
+<div class="week" id="week"></div></div>
+
+<div class="row">
+ <section class="frame panel click" id="ledgerPanel" role="button" tabindex="0" aria-label="Open the Ledger folder"><h3>THE LEDGER</h3><p class="sub">This Week’s Three Tasks</p>
+  <ul class="tasks" id="ledger"></ul>
+  <div class="art" id="hg" style="max-width:120px"></div></section>
+ <section class="frame panel"><h3>THE RELIQUARY</h3><p class="blurb">A sanctuary for memories, artifacts, and curios.</p><button class="link" data-go="reliquary">Open →</button>
+  <svg class="art" viewBox="0 0 100 130" style="max-width:120px"><use href="#jar"/></svg></section>
+</div>
+
+<div class="cards">
+ <section class="frame cw"><h3>THE PILGRIMAGE</h3><div class="art2"><div class="pic" role="button" tabindex="0" id="pPic" aria-label="Flip the pilgrimage card"><span class="fi"><span class="ff"><svg viewBox="0 0 100 150" fill="none" stroke="currentColor"><rect x=".75" y=".75" width="98.5" height="148.5" rx="26" fill="var(--sky)" fill-opacity=".5" stroke-width="1.5"/><use href="#gate" width="100" height="130"/></svg></span><span class="fb" id="pBack"></span></span></div><div class="cap" id="pTitle"></div></div></section>
+ <section class="frame cw"><h3>THE CURIOUS ENCOUNTER</h3><div class="art2"><div class="pic" role="button" tabindex="0" id="ePic" aria-label="Flip the curious encounter card"><span class="fi"><span class="ff"><svg viewBox="0 0 100 150" fill="none" stroke="currentColor"><rect x=".75" y=".75" width="98.5" height="148.5" rx="26" fill="var(--sky)" fill-opacity=".5" stroke-width="1.5"/><use href="#jar" width="100" height="130"/></svg></span><span class="fb" id="eBack"></span></span></div><div class="cap" id="eTitle"></div></div></section>
+ <section class="frame cw"><h3>THE MALADY</h3><div class="art2"><div class="pic" role="button" tabindex="0" id="mPic" aria-label="Flip the malady card"><span class="fi"><span class="ff"><svg viewBox="0 0 100 150" fill="none" stroke="currentColor"><rect x=".75" y=".75" width="98.5" height="148.5" rx="26" fill="var(--night)" stroke-width="1.5"/><use href="#orbit" width="100" height="130"/></svg></span><span class="fb" id="mBack"></span></span></div><div class="cap" id="mTitle"></div></div></section>
+</div>
+</section>
+
+<section class="view" id="v-ledger" hidden><h2 class="vt">THE LEDGER</h2><div id="lgBox"></div></section>
+<section class="view" id="v-daily" hidden><h2 class="vt">DAILY RITUALS</h2><p class="lead">Small things, every day. Finish them all to earn 10 gold.</p><div id="dBox"></div></section>
+<section class="view" id="v-mood" hidden><h2 class="vt">MOOD MOUNTAIN</h2><p class="lead">How was today? 1 is a blue day, 10 is a red day.</p><div id="mBox"></div></section>
+<section class="view" id="v-egg" hidden><h2 class="vt">EGG THIEF</h2><p class="lead">Carry each song from first idea to release.</p><div id="eBox"></div></section>
+<section class="view" id="v-hearth" hidden><h2 class="vt">THE HEARTH</h2><p class="lead">Small rituals that keep the household turning. Pick weekdays to have a chore appear in the Ledger automatically, or add it by hand.</p><div class="chores" id="hList"></div></section>
+<section class="view" id="v-life" hidden><h2 class="vt">LIFE FORCE</h2><p class="lead">Your vitality this month.</p><div id="lifeBox"></div></section>
+<section class="view" id="v-bank" hidden><h2 class="vt">THE GOLD BANK</h2><p class="lead">Gold earned from completed ledger tasks. Tap This week or Total to edit it.</p><div id="bankBox"></div></section>
+<section class="view" id="v-reliquary" hidden><h2 class="vt">THE RELIQUARY</h2><p class="lead">A sanctuary for memories, artifacts, and curios.</p>
+ <label for="rt">A memory, artifact, or curio</label><textarea id="rt" rows="3"></textarea><label for="rf">Photo (optional)</label><input id="rf" type="file" accept="image/*"><label for="ra">Audio clip (optional, about 1 MB max)</label><input id="ra" type="file" accept="audio/*"><label for="rl">Or a Spotify / music link</label><input id="rl" placeholder="https://open.spotify.com/…"><p><button class="btn" id="rs">Keep it</button></p><div id="rList"></div></section>
+<section class="view" id="v-wish" hidden><h2 class="vt">THE WISHLIST</h2><p class="lead">Things you want. Reach the monthly goal and the mystery prize picks one.</p><div id="wBox"></div></section>
+<section class="view" id="v-deck" hidden><h2 class="vt">THE DECK</h2><p class="lead">Every theme and card, and room for your own.</p><div id="dkBox"></div></section>
+<section class="view" id="v-skill" hidden><h2 class="vt">SKILL TREE</h2><div class="focus" id="sFocus"></div><p class="lead">Skills and hobbies you want to grow.</p><div id="sBox"></div></section>
+<section class="view" id="v-dream" hidden><h2 class="vt">THE DREAMCATCHER</h2><p class="lead">Catch ideas before they drift away.</p><div id="drBox"></div></section>
+<section class="view" id="v-archive" hidden><h2 class="vt">THE ARCHIVE</h2><p class="lead">Fifty-two weeks. Tap a week to see what you did.</p><div class="yr"><button id="yPrev" aria-label="Previous year">‹</button><b id="yNum"></b><button id="yNext" aria-label="Next year">›</button></div><div class="agrid" id="aGrid"></div></section>
+<section class="view" id="v-reflection" hidden><h2 class="vt">SUNDAY REFLECTION</h2><p class="lead" id="rLead"></p><div id="rForm"></div><h3 style="margin:24px 0 4px;text-align:center">PAST REFLECTIONS</h3><div id="jList"></div></section>
+</main></div>
+<dialog id="dlg"></dialog>
+
+<script src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    });
+  }
+</script>
+</body></html>
